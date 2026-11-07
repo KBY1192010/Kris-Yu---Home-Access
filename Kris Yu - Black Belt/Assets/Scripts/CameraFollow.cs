@@ -6,7 +6,7 @@ public class CameraFollow : MonoBehaviour
 
     [Header("Zoom Settings")]
     public float minZoom = 10;
-    public float maxZoom = 20f;
+    public float maxZoom = 200f;
     public float zoomLimiter = 10f;
     public float smoothTime = 0.2f;
 

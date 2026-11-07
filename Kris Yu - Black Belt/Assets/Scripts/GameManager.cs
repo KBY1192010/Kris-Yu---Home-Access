@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
             Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
         }
     }
+
+    //Spawns can be done in Update
 }
 
 

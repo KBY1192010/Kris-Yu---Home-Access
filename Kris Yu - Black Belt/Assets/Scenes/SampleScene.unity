@@ -412,8 +412,9 @@ MonoBehaviour:
   - {fileID: 536132346}
   - {fileID: 1164119072}
   - {fileID: 22082816}
-  background: {fileID: 0}
+  lives: 3
   HealthBar: {fileID: 1987443058}
+  jumpForce: 10
 --- !u!1 &22082816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,7 +1229,7 @@ MonoBehaviour:
   - {fileID: 1517270558}
   - {fileID: 16291514}
   minZoom: 5
-  maxZoom: 12
+  maxZoom: 200
   zoomLimiter: 10
   smoothTime: 0.2
 --- !u!1 &525529716
@@ -1568,8 +1569,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Heart: []
-  background: {fileID: 0}
+  lives: 3
   HealthBar: {fileID: 748058996}
+  jumpForce: 12
 --- !u!1 &839370664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,8 +2573,9 @@ MonoBehaviour:
   - {fileID: 2141368984}
   - {fileID: 1180098660}
   - {fileID: 1967677367}
-  background: {fileID: 0}
+  lives: 3
   HealthBar: {fileID: 748058996}
+  jumpForce: 12
 --- !u!1 &1532752505
 GameObject:
   m_ObjectHideFlags: 0
@@ -3141,8 +3144,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Heart: []
-  background: {fileID: 0}
+  lives: 3
   HealthBar: {fileID: 1987443058}
+  jumpForce: 10
 --- !u!1001 &2062001092
 PrefabInstance:
   m_ObjectHideFlags: 0
