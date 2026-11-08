@@ -7,12 +7,15 @@ public class ARROWLives : MonoBehaviour
     public List<GameObject> Heart;
     public int lives = 3;
     public GameObject HealthBar;
+    public GameObject Winner;
+
     public float jumpForce = 12f;
     private Rigidbody2D rb;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Winner.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -33,11 +36,17 @@ public class ARROWLives : MonoBehaviour
             {
                 Heart[lives].SetActive(false);
             }
+
+            if (rb != null)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            }
         }
 
         if (lives <= 0)
         {
             Die();
+            Winner.SetActive(true);
         }
     }
     private void Die()
