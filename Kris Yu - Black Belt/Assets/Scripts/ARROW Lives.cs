@@ -46,6 +46,7 @@ public class ARROWLives : MonoBehaviour
         if (lives <= 0)
         {
             Die();
+            Time.timeScale = 0;
             Winner.SetActive(true);
         }
     }
